@@ -1,0 +1,26 @@
+@(categories: List[Categories])
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<h1>List of Categories</h1>
+
+<table>
+    <tr>
+        <th>Category Id</th>
+        <th>Category Name</th>
+        <th>Description</th>
+    </tr>
+    @for(category <- categories){
+     <tr>
+         <td>@category.categoryId</td>
+         <td>@category.categoryName</td>
+         <td>@category.description</td>
+     </tr>
+    }
+
+</table>
+</body>
+</html>

@@ -1,0 +1,18 @@
+@(category: Categories)
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<form method="POST" action="@routes.CategoriesController.updateCategory()" id="updateCategory">
+    <input type="hidden" name="categoryId" value="@category.categoryId"/><br>
+    <input type="text" name="categoryName" value="@category.categoryName"/><br>
+    <button>Save</button>
+</form>
+</body>
+</html>
+
+
+
